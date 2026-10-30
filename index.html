@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siddhant Bali — Resume</title>
+<style>
+  /* Based on the classic Jake Gutierrez / sb2nov LaTeX resume style */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.3;
+    color: #000;
+    background: #fff;
+  }
+
+  .page {
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.5in 0.5in;
+  }
+
+  a { color: #0000ee; text-decoration: underline; }
+
+  /* ---------- Heading ---------- */
+  .name {
+    text-align: center;
+    font-size: 28pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    line-height: 1.1;
+  }
+
+  .contact {
+    text-align: center;
+    font-size: 10pt;
+    margin-top: 3pt;
+  }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 10pt; }
+
+  h2 {
+    font-size: 13pt;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3pt;
+    border-bottom: 1pt solid #000;
+    padding-bottom: 2pt;
+    margin-bottom: 6pt;
+  }
+
+  ul { list-style: none; }
+
+  /* ---------- Subheadings ---------- */
+  .subheading { margin-bottom: 4pt; }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+  }
+
+  .row .left { font-weight: bold; }
+  .row .right { text-align: right; white-space: nowrap; }
+
+  .row .sub {
+    font-style: italic;
+    font-size: 10pt;
+  }
+  .row .sub.left { font-weight: normal; }
+
+  /* Sub-subheading (italic, no bold) */
+  .subsubheading {
+    font-style: italic;
+    font-size: 10pt;
+    margin: 2pt 0;
+  }
+
+  /* Project heading (small, not bold on left) */
+  .projectheading {
+    font-size: 10pt;
+    margin-bottom: 2pt;
+  }
+  .projectheading .title { font-weight: bold; font-size: 11pt; }
+  .projectheading .tech { font-style: italic; font-size: 10pt; }
+
+  /* ---------- Bullet items ---------- */
+  .items {
+    list-style: disc;
+    padding-left: 18pt;
+    margin: 2pt 0 6pt 0;
+  }
+  .items li {
+    font-size: 10pt;
+    margin-bottom: 2pt;
+  }
+
+  /* ---------- Technical skills ---------- */
+  .skills { padding-left: 18pt; font-size: 10pt; }
+  .skills p { margin-bottom: 1pt; }
+  .skills strong { font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADING -->
+  <header>
+    <div class="name">Siddhant Bali</div>
+    <div class="contact">
+      +91 80762 18828 |
+      <a href="mailto:siddhant.bali.work@gmail.com">siddhant.bali.work@gmail.com</a> |
+      <a target="_blank" rel="noopener" href="https://github.com/kintsugi-programmer">github.com/kintsugi-programmer</a> |
+      <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/siddhantbali/">linkedin.com/in/siddhantbali</a> |
+      <a target="_blank" rel="noopener" href="https://www.sbali.tech/">sbali.tech</a>
+    </div>
+  </header>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li class="subheading">
+        <div class="row">
+          <span class="left">IIIT Delhi</span>
+          <span class="right">New Delhi, India</span>
+        </div>
+        <div class="row">
+          <span class="sub left">Bachelor of Technology - Computer Science and Design |
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/feed/update/urn:li:activity:7372341289918550016/">Dean&rsquo;s List Awardee</a>
+          </span>
+          <span class="sub right">Aug. 2022 &ndash; Jun. 2026</span>
+        </div>
+        <ul class="items">
+          <li>Relevant Coursework: Algorithms, Operating Systems, Networks, Databases, Object-Oriented Programming</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+    <ul>
+
+      <li class="subheading">
+        <div class="row">
+          <span class="left">Undergraduate Researcher</span>
+          <span class="right">Jan. 2025 &ndash; Dec. 2025</span>
+        </div>
+        <div class="row">
+          <span class="sub left">MI Lab, IIIT Delhi (in collaboration with ICMR &amp; AIIMS New Delhi) |
+            <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1xWXXTdRHHHUULKrngQsqZNJ4AdFiQBNE/view">Research Presentation</a>
+          </span>
+          <span class="sub right">New Delhi, India</span>
+        </div>
+        <ul class="items">
+          <li>Built FMT Hub, a cloud-based RBAC clinical data platform for access-controlled submissions, video uploads, multi-center validation across 6 hospitals, reducing bias and eliminating manual adjudication</li>
+          <li>Implemented anonymized center identifiers and automated email workflows using Google AppSheet to securely manage 800+ patient records</li>
+        </ul>
+      </li>
+
+      <li class="subheading">
+        <div class="row">
+          <span class="left">Web Developer &amp; Part-Time Intern (Contractual Roles)</span>
+          <span class="right">Apr. 2024 &ndash; Jul. 2025</span>
+        </div>
+        <div class="row">
+          <span class="sub left">IIIT Delhi</span>
+          <span class="sub right">New Delhi, India</span>
+        </div>
+
+        <div class="subsubheading row">
+          <span class="left">IIC |
+            <a target="_blank" rel="noopener" href="https://ecell.iiitd.edu.in/">Production</a> |
+            <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/15J8h-KHd-D_vZ8FEkdgwQNcVEaaCNLBa/view">Experience Letter</a>
+          </span>
+          <span class="right">Mar. 2025 &ndash; Jul. 2025</span>
+        </div>
+
+        <div class="subsubheading row">
+          <span class="left">Design Summer School |
+            <a target="_blank" rel="noopener" href="https://dss2025.iiitd.edu.in/">Production</a> |
+            <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view">Experience Letter</a>
+          </span>
+          <span class="right">Mar. 2025 &ndash; Apr. 2025</span>
+        </div>
+
+        <div class="subsubheading row">
+          <span class="left">1Pixel Design Conf. |
+            <a target="_blank" rel="noopener" href="https://1pxdesignconf.iiitd.edu.in/">Production</a> |
+            <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view">Experience Letter</a>
+          </span>
+          <span class="right">Dec. 2024 &ndash; Jan. 2025</span>
+        </div>
+
+        <div class="subsubheading row">
+          <span class="left">PerSIsst Lab |
+            <a target="_blank" rel="noopener" href="https://persisst.iiitd.edu.in/">Production</a> |
+            <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1uVUchMiUUwhLph9rYhSjSyHx-VntRaQw/view">Experience Letter</a>
+          </span>
+          <span class="right">Aug. 2024 &ndash; Dec. 2024</span>
+        </div>
+
+        <div class="subsubheading row">
+          <span class="left">HCD Dept. |
+            <a target="_blank" rel="noopener" href="https://hcd.iiitd.ac.in/">Production</a> |
+            <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view">Experience Letter</a>
+          </span>
+          <span class="right">Apr. 2024 &ndash; Jul. 2024</span>
+        </div>
+
+        <ul class="items">
+          <li>Led end-to-end architecture and cloud deployment of 5 production-grade platforms, designing reusable component systems and structured full-stack infrastructure for institutional deployments</li>
+          <li>Optimized performance and SEO using Lighthouse-driven improvements (90+ scores), dynamic routing, asset optimization, and responsive design for cross-device reliability</li>
+          <li>Executed hardened backend services and engineered shell-based deployment automation scripts to standardize server updates and reduce manual configuration errors</li>
+        </ul>
+      </li>
+
+      <li class="subheading">
+        <div class="row">
+          <span class="left">Web Developer</span>
+          <span class="right">Nov. 2024 &ndash; Jan. 2025</span>
+        </div>
+        <div class="row">
+          <span class="sub left">C S Bhatiya &amp; Associates |
+            <a target="_blank" rel="noopener" href="https://www.csbhatiya.com">Production</a> |
+            <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1ERZEwunqZLcGdk9Fz-A9g0KW0qIyfU5l/view">Experience Letter</a>
+          </span>
+          <span class="sub right">Pune, India</span>
+        </div>
+        <ul class="items">
+          <li>Led development and deployment of a high-performance, SEO-optimized website, achieving 90+ Lighthouse scores through performance optimization, DNS configuration, mail service integration and security patching</li>
+        </ul>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <ul>
+
+      <li class="subheading">
+        <div class="projectheading row">
+          <span class="left">
+            <span class="title">TelemetryTradeAI</span> |
+            <span class="tech">Bun, Next.js, TailwindCSS, ShadCN, Clerk, Groq AI, CoinGecko API, Tesseract.js</span>
+          </span>
+          <span class="right">2026</span>
+        </div>
+        <ul class="items">
+          <li>
+            <a target="_blank" rel="noopener" href="https://telemetry.sbali.tech/">Production</a> |
+            <a target="_blank" rel="noopener" href="https://github.com/kintsugi-programmer/TelemetryTrade">Source Code</a> |
+            <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Va5wmX31pqA">Demo Video</a> |
+            <a target="_blank" rel="noopener" href="https://youtu.be/SA6GP3SVA-0?si=YytorSKdEAPtFNfs&t=567">Press Coverage</a> |
+            Recognized by:
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/posts/hcdiiitd_iiitdelhi-studentstartup-delhistartupyuva-activity-7421215783311093760-4j5O/">IIITD</a> |
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/posts/siddhantbali_esummit2026-igdtuw-startuplife-activity-7425245221879427072-CC6h?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAD76nRQBudi_PgpTR3CsZU80QJy2K29c_R4">IGDTUW</a> |
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/posts/siddhantbali_startupecosystem-investments-equity-activity-7428227948970807296-qjhw?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAD76nRQBudi_PgpTR3CsZU80QJy2K29c_R4">Mercedes Benz</a>
+          </li>
+          <li>Built an AI-powered crypto intelligence platform featuring a streaming RAG chatbot, real-time market data integration and OCR-based portfolio analysis</li>
+          <li>Top 100 Products in India under Delhi SYF 2026 and Awarded INR 1,00,000 by Hon&rsquo;ble Chief Minister of Delhi</li>
+        </ul>
+      </li>
+
+      <li class="subheading">
+        <div class="projectheading row">
+          <span class="left">
+            <span class="title">LifeLore</span> |
+            <span class="tech">Next.js, MongoDB, NextAuth, TailwindCSS, ShadCN</span>
+          </span>
+          <span class="right">2024</span>
+        </div>
+        <ul class="items">
+          <li>
+            <a target="_blank" rel="noopener" href="https://lifelore.sbali.tech/">Production</a> |
+            <a target="_blank" rel="noopener" href="https://github.com/kintsugi-programmer/lifelore">Source Code</a> |
+            <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=11zYdMHxLr8">Demo Video</a>
+          </li>
+          <li>Built LifeLore, a community-driven platform for user-generated posts, discussions, and tag-based content discovery</li>
+          <li>Applied secure authentication with protected routes and modular UI systems to ensure reliable cross-device performance</li>
+        </ul>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <p><strong>Languages</strong>: Rust, Python, SQL, C++, Bash</p>
+      <p><strong>Frameworks</strong>: Bun, Next.js, React, Flask, Material-UI, FastAPI, ShadCN, TailwindCSS</p>
+      <p><strong>Developer Tools</strong>: Git, GitHub, GitLab, Linux, Vercel, Postman, Google Cloud Platform, Google AppSheet, VS Code, Visual Studio, PyCharm, IntelliJ, Clerk, MongoDB Atlas, Supabase</p>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

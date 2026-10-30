@@ -1,0 +1,360 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+
+
+% \usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Siddhant Bali} \\ \vspace{1pt}
+    \small +91 80762 18828 $|$ 
+    \href{mailto:siddhant.bali.work@gmail.com}{siddhant.bali.work@gmail.com} $|$ 
+    \href{https://github.com/kintsugi-programmer}
+    {github.com/kintsugi-programmer} 
+    % $|$
+    
+    \href{https://www.linkedin.com/in/siddhantbali/}{linkedin.com/in/siddhantbali} $|$
+    % \href{https://x.com/siddhantbuilds}
+    % {\underline{x.com/siddhantbuilds}} $|$
+    % \href{https://codingismeditation.hashnode.dev/}
+    % {\underline{codingismeditation.hashnode.dev}} $|$
+    \href{https://www.sbali.tech/}{sbali.tech}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IIIT Delhi}{New Delhi, India}
+      {Bachelor of Technology - Computer Science and Design $|$ 
+\href{https://www.linkedin.com/feed/update/urn:li:activity:7372341289918550016/}{\underline{Dean’s List Awardee}}}{Aug. 2022 -- Jun. 2026}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Algorithms, Operating Systems, Networks, Databases, Object-Oriented Programming}
+    \resumeItemListEnd
+    % \resumeSubheading
+    %   {Blinn College}{Bryan, TX}
+    %   {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {Undergraduate Researcher}{Jan. 2025 -- Dec. 2025}
+  {MI Lab, IIIT Delhi (in collaboration with ICMR \& AIIMS New Delhi) $|$ \href{https://drive.google.com/file/d/1xWXXTdRHHHUULKrngQsqZNJ4AdFiQBNE/view}{\underline{Research Presentation}}}{New Delhi, India}
+  \resumeItemListStart
+  % \resumeItem{Research Advisor: \href{https://iiitd.ac.in/tarini}{Dr. Tarini Shankar Ghosh} \& \href{https://aiims.edu/index.php/en/component/content/article/96-gastroenterology-and-human-nutrition/5219-dr-vineet-ahuja_gastro}{Dr. Vineet Ahuja} }
+    \resumeItem{Built FMT Hub, a cloud-based RBAC clinical data platform for access-controlled submissions, video uploads, multi-center validation across 6 hospitals, reducing bias and eliminating manual adjudication}
+    \resumeItem{Implemented anonymized center identifiers and automated email workflows using Google AppSheet to securely manage 800+ patient records}
+  \resumeItemListEnd
+  
+
+%     \resumeSubheading
+%       {Undergraduate Researcher}{June 2020 -- Present}
+%       {IIIT Delhi (in collaboration with ICMR and AIIMS New Delhi)}{New Delhi, India}
+%       \resumeItemListStart
+%         \resumeItem{Developed FMT Hub,
+%         under the mentorship of Dr. Tarini Shankar Ghosh (IIIT Delhi) and Dr. Vineet Ahuja (AIIMS New Delhi)
+%         , 
+%         a 
+%         % scalable 
+%         cloud-based clinical data platform supporting secure submissions, video uploads, and cross-center validation across 6 medical institutions}
+%         \resumeItem{Architected role-based access control, randomized encrypted center identifiers, automated email notifications, and audit logging using Google AppSheet and Google Cloud to ensure unbiased, high-integrity processing of 800+ patient records}
+%         % \resumeItem{Designed a multi-reader reconciliation engine with randomized assignment and secret validation workflows to prevent investigator cross-awareness, reduce bias, and eliminate manual adjudication overhead in multicenter clinical trials}
+% % \resumeItem{Built FMT Hub, a scalable cloud-based clinical platform enabling secure submissions, video uploads, and cross-center validation across 6 institutions}
+% % \resumeItem{Implemented RBAC, encrypted center identifiers, automated email workflows, and audit logging on Google Cloud to process 800+ patient records with high integrity}
+% \resumeItem{Engineered a randomized multi-reader reconciliation system to prevent investigator bias and eliminate manual adjudication overhead}
+%       \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubheading
+  {Web Developer \& Part-Time Intern (Contractual Roles) }{Apr. 2024 -- Jul. 2025}
+  {IIIT Delhi}{New Delhi, India}
+  
+    \resumeSubSubheading
+    {IIC $|$ 
+    \href{https://ecell.iiitd.edu.in/}{\underline{Production}} $|$ \href{https://drive.google.com/file/d/15J8h-KHd-D_vZ8FEkdgwQNcVEaaCNLBa/view}{\underline{Experience Letter}}}{Mar. 2025 -- Jul. 2025}
+  
+    \resumeSubSubheading
+    {Design Summer School $|$ \href{https://dss2025.iiitd.edu.in/}{\underline{Production}} $|$ \href{https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view}{\underline{Experience Letter}}}{Mar. 2025 -- Apr. 2025}
+
+    \resumeSubSubheading
+    {1Pixel Design Conf. $|$ \href{https://1pxdesignconf.iiitd.edu.in/}{\underline{Production}} $|$ \href{https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view}{\underline{Experience Letter}}}{Dec. 2024 -- Jan. 2025}
+
+    \resumeSubSubheading
+    {PerSIsst Lab $|$ \href{https://persisst.iiitd.edu.in/}{\underline{Production}} $|$ \href{https://drive.google.com/file/d/1uVUchMiUUwhLph9rYhSjSyHx-VntRaQw/view}{\underline{Experience Letter}}}{Aug. 2024 -- Dec. 2024}
+    
+    \resumeSubSubheading
+    {HCD Dept. $|$ \href{https://hcd.iiitd.ac.in/}{\underline{Production}} $|$ \href{https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view}{\underline{Experience Letter}}}{Apr. 2024 -- Jul. 2024}
+
+    \resumeItemListStart
+
+    \resumeItem{Led end-to-end architecture and cloud deployment of 5 production-grade platforms, designing reusable component systems and structured full-stack infrastructure for institutional deployments}
+
+    \resumeItem{Optimized performance and SEO using Lighthouse-driven improvements (90+ scores), dynamic routing, asset optimization, and responsive design for cross-device reliability}
+
+    % \resumeItem{Implemented secure backend services, structured deployment workflows, and deployment automation release pipelines to improve maintainability and reduce deployment friction}
+    \resumeItem{Executed hardened backend services and engineered shell-based deployment automation scripts to standardize server updates and reduce manual configuration errors}
+    
+    % \resumeItem{Led design, development, and cloud deployment of multiple departmental production websites, responsive, scalable full-stack platforms \& streamlined deployment workflows}
+    %     \resumeItem{Design, Development \& Deployment of the official website, ensuring performance, availability \& Responsiveness}
+    %         \resumeItem{Engineered and deployed a scalable, SEO-optimized web platform with reusable components, dynamic routing, and secure backend services, ensuring performance \& cross-device reliability}
+  \resumeItemListEnd
+
+
+
+% \resumeSubheading
+%   {Part-Time Web Development Intern}{Mar 2025 -- Jul 2025}
+%   {Institute Innovation Council (IIC), IIIT Delhi}{New Delhi, India}
+%   \resumeItemListStart
+%     \resumeItem{Supervisor: \href{https://ssh.iiitd.ac.in/old1/pankaj.php}{Prof. Pankaj Vajpayee} $|$ \href{https://ecell.iiitd.edu.in/}{\underline{Production}} $|$ 
+% \href{https://drive.google.com/file/d/15J8h-KHd-D_vZ8FEkdgwQNcVEaaCNLBa/view}{\underline{Experience Letter}}}
+%     \resumeItem{Design, Development \& Deployment of the official website, ensuring performance, availability \& Responsiveness}
+%   \resumeItemListEnd
+
+% \resumeSubheading
+%   {Part-Time Web Development Intern}{Apr 2024 -- Apr 2025}
+%   {Department of Human-Centered Design (HCD), IIIT Delhi}{New Delhi, India}
+% \resumeSubSubheading
+%     {Production 1: HCD Dept. IIITD 2025}{Apr. 24 -- Jul. 24}
+
+%   \resumeSubSubheading
+%     {Production 2: 1Pixel Design Conf. 2025}{Dec. 24 -- Jan. 25}
+
+%   \resumeSubSubheading
+%     {Production 3: Design Summer School 2025}{Mar. 25 -- Apr. 25}
+%   \resumeItemListStart
+%     \resumeItem{Supervisor: \href{https://hcd.iiitd.ac.in/connect}{Ms. Binu Ann Joseph} $|$ 
+%     \href{https://hcd.iiitd.ac.in/}{\underline{Production 1}} $|$ 
+%     \href{https://1pxdesignconf.iiitd.edu.in/}{\underline{Production 2}} $|$ 
+%     \href{https://dss2025.iiitd.edu.in/}{\underline{Production 3}} $|$ 
+% \href{https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view}{\underline{Experience Letter}}}
+    
+%     \resumeItem{Led design, development, and cloud deployment of multiple departmental production websites, responsive, scalable full-stack platforms \& streamlined deployment workflows}
+%   \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+   % \resumeSubSubheading
+   %  {Software Engineer I}{Oct 2014 - Sep 2016}
+   %  \resumeItemListStart
+   %     \resumeItem{Apache Beam}
+   %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+   %  \resumeItemListEnd
+   % \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubheading
+  {Web Developer}{Nov. 2024 -- Jan. 2025}
+  {C S Bhatiya \& Associates $|$ \href{https://www.csbhatiya.com}{\underline{Production}} $|$ \href{https://drive.google.com/file/d/1ERZEwunqZLcGdk9Fz-A9g0KW0qIyfU5l/view}{\underline{Experience Letter}}}{Pune, India}
+  \resumeItemListStart
+    
+\resumeItem{Led development and deployment of a high-performance, SEO-optimized website, achieving 90+ Lighthouse scores through performance optimization, DNS configuration, mail service integration and security patching}
+    
+  \resumeItemListEnd
+
+% \resumeSubheading
+%   {Web Developer}{Aug 2024 -- Dec 2024}
+%   {PerSIsst Lab, Department of Human-Centered Design (HCD), IIIT Delhi}{New Delhi, India}
+%   \resumeItemListStart
+%     \resumeItem{Supervisor: \href{https://persisst.iiitd.edu.in/}{Dr. Pragma Kar} $|$
+%     \href{https://persisst.iiitd.edu.in/}{\underline{Production}} $|$ \href{https://drive.google.com/file/d/1uVUchMiUUwhLph9rYhSjSyHx-VntRaQw/view}{\underline{Experience Letter}}}
+%     \resumeItem{Engineered and deployed a scalable, SEO-optimized web platform with reusable components, dynamic routing, and secure backend services, ensuring performance \& cross-device reliability}
+%   \resumeItemListEnd
+  
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+        
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+{\textbf{TelemetryTradeAI} $|$ \emph{Bun, Next.js, TailwindCSS, ShadCN, Clerk, Groq AI, CoinGecko API, Tesseract.js} 
+
+}{2026}
+\resumeItemListStart
+\resumeItem{\href{https://telemetry.sbali.tech/}{\underline{Production}} $|$ \href{https://github.com/kintsugi-programmer/TelemetryTrade}{\underline{Source Code}} $|$
+\href{https://www.youtube.com/watch?v=Va5wmX31pqA}{\underline{Demo Video}} $|$ \href{https://youtu.be/SA6GP3SVA-0?si=YytorSKdEAPtFNfs&t=567}{\underline{Press Coverage}} $|$ Recognized by: \href{https://www.linkedin.com/posts/hcdiiitd_iiitdelhi-studentstartup-delhistartupyuva-activity-7421215783311093760-4j5O/}{\underline{IIITD} }$|$ \href{https://www.linkedin.com/posts/siddhantbali_esummit2026-igdtuw-startuplife-activity-7425245221879427072-CC6h?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD76nRQBudi_PgpTR3CsZU80QJy2K29c_R4}{\underline{IGDTUW}} $|$ \href{https://www.linkedin.com/posts/siddhantbali_startupecosystem-investments-equity-activity-7428227948970807296-qjhw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD76nRQBudi_PgpTR3CsZU80QJy2K29c_R4}{\underline{Mercedes Benz} }
+}
+\resumeItem{Built an AI-powered crypto intelligence platform featuring a streaming RAG chatbot, real-time market data integration and OCR-based portfolio analysis}
+\resumeItem{Top 100 Products in India under Delhi SYF 2026 and Awarded INR 1,00,000 by Hon’ble Chief Minister of Delhi}
+\resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+      %       \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+      %       \resumeItem{Visualized GitHub data to show collaboration}
+      %       \resumeItem{Used Celery and Redis for asynchronous tasks}
+      %     \resumeItemListEnd
+    
+      % \resumeProjectHeading
+      %     {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+      %       \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+      %       \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+      %       \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+      %     \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{LifeLore} $|$ \emph{Next.js, MongoDB, NextAuth, TailwindCSS, ShadCN} }{2024}
+    \resumeItemListStart
+    \resumeItem{ \href{https://lifelore.sbali.tech/}{\underline{Production}} $|$ \href{https://github.com/kintsugi-programmer/lifelore}{\underline{Source Code}  }$|$ \href{https://www.youtube.com/watch?v=11zYdMHxLr8}{\underline{Demo Video}}}
+\resumeItem{Built LifeLore, a community-driven platform for user-generated posts, discussions, and tag-based content discovery}\resumeItem{Applied secure authentication with protected routes and modular UI systems to ensure reliable cross-device performance}
+    \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Rust, Python, SQL, C++, Bash} \\
+     \textbf{Frameworks}{: Bun, Next.js, React, Flask, Material-UI, FastAPI, ShadCN, TailwindCSS} \\
+     \textbf{Developer Tools}{: Git, GitHub, GitLab, Linux, Vercel, Postman, Google Cloud Platform, Google AppSheet, VS Code, Visual Studio, PyCharm, IntelliJ, Clerk, MongoDB Atlas, Supabase  } \\
+    %  \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }
+    }
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
