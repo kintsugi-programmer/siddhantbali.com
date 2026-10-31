@@ -155,6 +155,12 @@
   .skills { padding-left: 18pt; font-size: 10pt; }
   .skills p { margin-bottom: 1pt; }
   .skills strong { font-weight: bold; }
+
+  /* Social handles: two columns on PC only */
+  @media (min-width: 700px) {
+    .skills.social { column-count: 2; column-gap: 0.3in; }
+    .skills.social p { break-inside: avoid; }
+  }
 </style>
 </head>
 <body>
@@ -370,6 +376,23 @@
       <p><strong>Languages</strong>: Rust, Python, SQL, C++, Bash</p>
       <p><strong>Frameworks</strong>: Bun, Next.js, React, Flask, Material-UI, FastAPI, ShadCN, TailwindCSS</p>
       <p><strong>Developer Tools</strong>: Git, GitHub, GitLab, Linux, Vercel, Postman, Google Cloud Platform, Google AppSheet, VS Code, Visual Studio, PyCharm, IntelliJ, Clerk, MongoDB Atlas, Supabase</p>
+    </div>
+  </section>
+
+  <!-- SOCIAL HANDLES -->
+  <section>
+    <h2>Social Handles</h2>
+    <div class="skills social">
+       <p><strong>Location</strong>: Delhi-Noida-Gurugram, India </p>
+      <p><strong>Contact Number</strong>: <a href="tel:+918076218828">+91 80762 18828</a></p>
+      <p><strong>Email</strong>: <a href="mailto:siddhant.bali.work@gmail.com">siddhant.bali.work@gmail.com</a></p>
+      <p><strong>GitHub</strong>: <a target="_blank" rel="noopener" href="https://github.com/kintsugi-programmer">github.com/kintsugi-programmer</a></p>
+      <p><strong>LinkedIn</strong>: <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/siddhantbali/">linkedin.com/in/siddhantbali</a></p>
+      <p><strong>LinkedIn Newsletter (Coding Is Meditation)</strong>: <a target="_blank" rel="noopener" href="https://www.linkedin.com/newsletters/coding-is-meditation-7435057733537722368/">linkedin.com/newsletters/coding-is-meditation-7435057733537722368/</a></p>
+      <p><strong>YouTube</strong>: <a target="_blank" rel="noopener" href="https://www.youtube.com/@siddhantbali1">youtube.com/@siddhantbali1</a></p>
+      <p><strong>YouTube (Coding Is Meditation)</strong>: <a target="_blank" rel="noopener" href="https://www.youtube.com/@CodingIsMeditation">youtube.com/@CodingIsMeditation</a></p>
+      <p><strong>Instagram</strong>: <a target="_blank" rel="noopener" href="https://www.instagram.com/kintsugiprogrammer">instagram.com/kintsugiprogrammer</a></p>
+      <p><strong>Website</strong>: <a target="_blank" rel="noopener" href="https://www.siddhantbali.com/">siddhantbali.com</a></p>
     </div>
   </section>
 
