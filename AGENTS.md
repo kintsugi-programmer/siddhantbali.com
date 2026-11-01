@@ -4,16 +4,15 @@
 
 Personal resume website. The **entire site is a single static file: `index.html`** — no build step, no dependencies, no dev server, no tests, no lint config. Preview by opening `index.html` in a browser.
 
-## Critical: two sources of truth
+## Single source of truth
 
-`resume.tex` (Jake Gutierrez / sb2nov LaTeX template) and `index.html` (hand-ported HTML/CSS replica of that resume) contain the **same resume content**. They are kept in sync manually.
+`index.html` is the **single source of truth for all resume content**. The original `resume.tex` (Jake Gutierrez / sb2nov LaTeX template) was removed in commit `47ac115` — the old LaTeX content and its commented-out draft entries remain recoverable from git history if ever needed.
 
-- If you edit resume content (jobs, projects, skills, links, contact info), **update both files**.
-- `resume.tex` also contains many commented-out draft entries — that's intentional scratch space; don't "clean it up" unless asked.
+- Edit resume content (jobs, projects, skills, blogs, videos, links, contact info) directly in `index.html`.
 
 ## Conventions
 
 - External links use `target="_blank" rel="noopener"` in `index.html` — preserve this on any new link.
 - `index.html` styling is intentionally a faithful clone of the sb2nov LaTeX resume look (11pt Helvetica, 8.5in page, section rules). Avoid restyling unless asked.
-- Special characters in HTML use entities (`&rsquo;`, `&ndash;`, `&amp;`); LaTeX uses its own escapes (`\&`, `--`, `$|$`). Match each file's convention.
+- Special characters in HTML use entities (`&rsquo;`, `&ndash;`, `&amp;`) — match this in any new content.
 - Deployed content comes from `index.html` on `main`; there is no build pipeline to regenerate anything.
